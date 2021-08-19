@@ -16,7 +16,7 @@ module.Window.TopbarUseAccentInstead = true
 
 -- Button color
 module.Button = {}
-module.Button.RoundHoverColor = Color3.fromRGB(54, 57, 63)
+module.Button.RoundHoverColor = Color3.fromRGB(255, 255 ,255)
 module.Button.MenuHoverColor = module.Button.RoundHoverColor
 module.Button.ModalHoverColor = module.ThemeColor
 
