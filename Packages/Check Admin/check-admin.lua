@@ -5,11 +5,14 @@ local module = {
 }
 
 module.Execute = function(Client, Type, Attachment)
+	if Type == "command" then
 	local target = module.API.getPlayerWithName(Attachment)
 	if module.API.checkAdmin(target.UserId) then
-		module.Remotes.Event:FireClient(Client, "newHint", "", {From = "System", Content = Attachment .. " is a admin.", Duration = 5})
+			module.API.Players.notify(Client, 'System', Attachment .. ' is a admin.')
 	else
-		module.Remotes.Event:FireClient(Client, "newHint", "", {From = "System", Content = Attachment .. " is not a admin.", Duration = 5})
+			module.API.Players.notify(Client, 'System', Attachment .. ' is not a admin.')
+		end
+		return false
 	end
 end
 
