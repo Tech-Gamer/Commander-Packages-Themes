@@ -1,3 +1,3 @@
 # Packages
 
-Check Admin - https://www.roblox.com/library/6679902040/Check-Admin-Package-for-commander
+Check Admin - https://github.com/Tech-Gamer/Commander-Packages-Themes/tree/main/Packages/Check%20Admin
